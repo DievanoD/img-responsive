@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudando mais profundamente e testando a tag img do html">
     <title>Img responsive test</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -13,21 +14,38 @@
     <main>
         <div class="container">
             <h1>Img responsive test</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci reiciendis architecto quaerat sunt
-                blanditiis perspiciatis, asperiores dicta repudiandae impedit aut omnis labore tempora, eius optio!
-                Omnis pariatur necessitatibus dolorem asperiores.</p>
+            <p>Estudando e testando os conceitos de imagens responsivas com a tag <i>img</i>. Para agregar conhecimento
+                e entender melhor o funcionamento e suas diferenças.</p>
+            <!-- <div class="img-container">
+                <h2>Srcset</h2>
+                Usando srcset
+                <img src="./images/placeholder-250w.png" srcset="./images/placeholder-250w.png 250w" sizes="(max-width: 600px) 150px,
+            (min-width: 1600px) 500px, 250px," alt="Placeholders com sizes">
+                <p><strong>Anotações:</strong> Altera o tamanho da imagem de acordo com as definições do <i>sizes</i>,
+                    mostrando a mesma imagem em tamanho aumentado ou reduzido.</p>
+            </div> -->
+
             <div class="img-container">
-                <img srcset="./images/placeholder-150w.png 150w, ./images/placeholder-250w.png 250w,
-                ./images/placeholder-500w.png 500w" sizes="(max-width: 600px) 140px, (max-width: 1599px) 240px,
-            (min-width: 1600px) 480px" src="./images/placeholder-500w.png" alt="Placeholders com sizes">
-
-
+                <h2>Picture</h2>
+                <!-- Usando picture -->
+                <picture>
+                    <source media="(max-width: 600px)" width="150" height="150" srcset="./images/placeholder-150w.png">
+                    <source media="(min-width: 1600px)" width="500" height="500" srcset="./images/placeholder-500w.png">
+                    <img src="./images/placeholder-250w.png" alt="imagem placeholder" width="250" height="250">
+                </picture>
+                <p><strong>Anotações:</strong> Renderiza uma nova imagem de acordo com as definições do <i>source</i>,
+                    em cada tamanho mostra uma imagem diferente.</p>
             </div>
 
             <div class="source-content">
                 <p>Fonte: <a
                         href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images"
                         target="_blank">https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images</a>
+                </p>
+                <br>
+                <p>Fonte: <a
+                        href="https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=lr#images-without-dimensions"
+                        target="_blank">https://web.dev/optimize-cls/?utm_source=lighthouse&utm_medium=lr#images-without-dimensions</a>
                 </p>
             </div>
         </div>
