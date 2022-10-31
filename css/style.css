@@ -1,0 +1,54 @@
+:root {
+    --container-width: 1000px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    width: var(--container-width);
+    height: 100%;
+    margin: auto;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.img-container {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.source-content{
+    text-align: center;
+    color: #9c9c9c;
+    word-break: break-word;
+}
+
+.source-content a {
+    color: inherit;
+}
+
+.source-content a:hover {
+    color: #4d4d4d;
+}

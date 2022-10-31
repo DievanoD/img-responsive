@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img responsive test</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Img responsive test</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci reiciendis architecto quaerat sunt
+                blanditiis perspiciatis, asperiores dicta repudiandae impedit aut omnis labore tempora, eius optio!
+                Omnis pariatur necessitatibus dolorem asperiores.</p>
+            <div class="img-container">
+                <img srcset="./images/placeholder-150w.png 150w, ./images/placeholder-250w.png 250w,
+                ./images/placeholder-500w.png 500w" sizes="(max-width: 600px) 140px, (max-width: 1599px) 240px,
+            (min-width: 1600px) 480px" src="./images/placeholder-500w.png" alt="Placeholders com sizes">
+
+
+            </div>
+
+            <div class="source-content">
+                <p>Fonte: <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images"
+                        target="_blank">https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images</a>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
